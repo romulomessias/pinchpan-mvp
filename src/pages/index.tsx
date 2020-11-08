@@ -1,6 +1,14 @@
 import styles from "./style.module.scss";
 
-import { FC, useState, useRef, MouseEvent, WheelEvent, Fragment } from "react";
+import {
+  FC,
+  useState,
+  useRef,
+  MouseEvent,
+  WheelEvent,
+  Fragment,
+  useEffect,
+} from "react";
 // import Link from "next/link";
 
 const IndexPage: FC = () => {
@@ -26,7 +34,7 @@ const IndexPage: FC = () => {
   };
 
   const onMouseLeave = (e: MouseEvent<HTMLDivElement>) => {
-    console.log(e)
+    console.log(e);
     setIsDragging(false);
   };
 
@@ -75,6 +83,12 @@ const IndexPage: FC = () => {
     console.log("whell", e.deltaY);
     setScale(tmpScale);
   };
+
+  useEffect(() => {
+    document.body.addEventListener("mousewheel", function (e) {
+      e.preventDefault();
+    });
+  }, []);
 
   return (
     <main
