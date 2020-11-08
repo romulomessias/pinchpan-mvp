@@ -9,7 +9,8 @@
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 3px 0px;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
       border-color: transparent;
     }
     // position: absolute;
@@ -43,6 +44,7 @@
     width: 100vw;
     padding: 8px;
     display: grid;
+    grid-gap: 16px;
     justify-content: center;
     align-items: center;
     border-top: solid 1px rgba(gray, 0.75);

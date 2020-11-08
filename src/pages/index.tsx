@@ -120,26 +120,27 @@ const IndexPage: FC = () => {
             <div>{itemRef.current?.offsetTop}</div>
             <div>{itemRef.current?.offsetHeight}</div>
             <div>{itemRef.current?.offsetWidth}</div>
-            <button
-              onClick={() => {
-                setPosition({ x: 0, y: 0 });
-              }}
-            >
-              reset position
-            </button>
-
-            <button
-              onClick={() => {
-                setScale(1);
-              }}
-            >
-              reset scale
-            </button>
           </div>
         </div>
       </article>
 
-      <footer>Hello</footer>
+      <footer>
+        <button
+          onClick={() => {
+            setPosition({ x: 0, y: 0 });
+          }}
+        >
+          reset position
+        </button>
+
+        <button
+          onClick={() => {
+            setScale(1);
+          }}
+        >
+          reset scale
+        </button>
+      </footer>
     </main>
   );
 };
