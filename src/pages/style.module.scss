@@ -1,0 +1,45 @@
+.main {
+  height: 100%;
+  position: relative;
+  background-color: rgba(gray, 0.05);
+
+  width: 100vw;
+    height: 100vh;
+  article {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100vw;
+    height: 100vh;
+    // right: 0;
+    // bottom: 0;
+    // border: solid 12px;
+    background-color: white;
+
+    border: solid 1px rgba(gray, 0.25);
+    border-radius: 16px;
+    padding: 8px;
+  }
+
+  .content {
+    padding: 12px;
+    width: 320px;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(aliceblue, 1);
+    border: solid 2px aquamarine;
+  }
+
+  & > footer {
+    position: absolute;
+    bottom: 0;
+    height: 48px;
+    width: 100vw;
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px rgba(gray, 0.75);
+    background-color: rgba(gray, 0.25);
+  }
+}
