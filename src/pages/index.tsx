@@ -128,17 +128,10 @@ const IndexPage: FC = () => {
         <button
           onClick={() => {
             setPosition({ x: 0, y: 0 });
-          }}
-        >
-          reset position
-        </button>
-
-        <button
-          onClick={() => {
             setScale(1);
           }}
         >
-          reset scale
+          reset
         </button>
       </footer>
     </main>
