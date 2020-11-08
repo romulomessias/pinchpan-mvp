@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 
 import { FC, useState, useRef, MouseEvent, WheelEvent, Fragment } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 
 const IndexPage: FC = () => {
   const [scale, setScale] = useState(1);
@@ -13,7 +13,7 @@ const IndexPage: FC = () => {
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const itemRef = useRef<HTMLDivElement>(null);
 
-  const onMouseDawn = (e) => {
+  const onMouseDawn = (e: MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(true);
 
@@ -25,7 +25,8 @@ const IndexPage: FC = () => {
     setOffsetPosition(tmpOffset);
   };
 
-  const onMouseLeave = (e) => {
+  const onMouseLeave = (e: MouseEvent<HTMLDivElement>) => {
+    console.log(e)
     setIsDragging(false);
   };
 
