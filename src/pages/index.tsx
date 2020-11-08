@@ -12,7 +12,7 @@ import {
 // import Link from "next/link";
 
 const IndexPage: FC = () => {
-  const [scale, setScale] = useState(1);
+  const [scale, setScale] = useState(0.75);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [offsetPosition, setOffsetPosition] = useState({
     x: 0,
